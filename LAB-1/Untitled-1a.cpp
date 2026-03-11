@@ -43,10 +43,11 @@ int main()
         string a;
         printf("Please enter your word: ");
         cin >> b;
-        add(a);
-        remove(a);
+        if (b == "EXIT") break;
+        else if(b == "UNDO") remove(a);
+        else add(a);
+       
         see();
-
         return false;
     }
     return 0;
